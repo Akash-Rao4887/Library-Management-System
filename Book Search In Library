@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            min-height: 100vh;
+            padding: 1.5rem;
+        }
+        header {
+            width: 100%;
+            max-width: 960px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .search-wrapper {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+        .search-wrapper input[type="search"] {
+            width: calc(100% - 2.5rem);
+            padding-left: 2.5rem;
+            padding-right: 1rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+        }
+        .search-icon {
+            position: absolute;
+            left: 0.75rem;
+            top: 0.75rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            fill: none;
+            stroke: #9e9e9e;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        .filter-wrapper {
+            margin-bottom: 1rem;
+        }
+        .filter-wrapper select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+        }
+        .main {
+            width: 100%;
+            max-width: 960px;
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .card-header {
+            margin-bottom: 1rem;
+        }
+        .card-title {
+            font-weight: bold;
+            font-size: 1.125rem;
+        }
+        .card-description {
+            color: #757575;
+        }
+        .card-content p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="search-wrapper">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21l-4.3-4.3" />
+                </svg>
+                <input type="search" placeholder="Search books by title, author, or ISBN...">
+            </div>
+            <div class="filter-wrapper">
+                <select id="filter">
+                    <option value="">All Subjects</option>
+                    <option value="math">Math</option>
+                    <option value="physics">Physics</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="c-programming">C-Programming</option>
+                    <option value="English">English</option>
+                   <option value="CSE">CSE</option>
+                </select>
+            </div>
+        </header>
+        <main class="main">
+            <div class="card" data-subject="CSE">
+                <div class="card-header">
+                    <div class="card-title">The great lekarz raj </div>
+                    <div class="card-description">F. Fitzgerald</div>
+                </div>
+                <div class="card-content">
+                    <p>Short description of the book. This is where the book summary will go. <br>Shelf: 12, Row: 5</p>
+                </div> </div>
+            <div class="card" data-subject="physics">
+                <div class="card-header">
+                    <div class="card-title">Book Title 2 - New Name</div>
+                    <div class="card-description">Author Name</div>
+                </div>
+                <div class="card-content">
+                    <p>Short description of the book. This is where the book summary will go. <br>Shelf: 12, Row: 5</p>
+                </div>
+
+ </div>
+            <div class="card" data-subject="physics">
+                <div class="card-header">
+                    <div class="card-title">Book Title 3 - New Name</div>
+                    <div class="card-description">Author Name</div>
+                </div>
+                <div class="card-content">
+                    <p>Short description of the book. This is where the book summary will go. <br>Shelf: 12, Row: 5</p>
+                </div>
+  <div class="card" data-subject="physics">
+                <div class="card-header">
+                    <div class="card-title">Title 2 - New Name</div>
+                    <div class="card-description">Author Name</div>
+                </div>
+                <div class="card-content">
+                    <p>Short description of the book. This is where the book summary will go. <br>Shelf: 12, Row: 5</p>
+                </div>
+  <div class="card" data-subject="physics">
+                <div class="card-header">
+                    <div class="card-title">Book Title 2 - New Name</div>
+                    <div class="card-description">Author Name</div>
+                </div>
+                <div class="card-content">
+                    <p>Short description of the book. This is where the book summary will go. <br>Shelf: 12, Row: 5</p>
+                </div>
+
+
+
+
+ </div>
+            <div class="card" data-subject="physics">
+                <div class="card-header">
+                    <div class="card-title">Book Title 2 - New Name</div>
+                    <div class="card-description">Author Name</div>
+                </div>
+                <div class="card-content">
+                    <p>Short description of the book. This is where the book summary will go. <br>Shelf: 12, Row: 5</p>
+                </div>
+
+ </div>
+            <div class="card" data-subject="physics">
+                <div class="card-header">
+                    <div class="card-title">Book Title 2 - New Name</div>
+                    <div class="card-description">Author Name</div>
+                </div>
+                <div class="card-content">
+                    <p>Short description of the book. This is where the book summary will go. <br>Shelf: 12, Row: 5</p>
+                </div>
+
+ </div>
+            <div class="card" data-subject="physics">
+                <div class="card-header">
+                    <div class="card-title">Book Title 2 - New Name</div>
+                    <div class="card-description">Author Name</div>
+                </div>
+                <div class="card-content">
+                    <p>Short description of the book. This is where the book summary will go. <br>Shelf: 1111112222222222222222222222222222222, Row: 5</p>
+                </div>
+
+
+ </div>
+            <div class="card" data-subject="physics">
+                <div class="card-header">
+                    <div class="card-title">Book Title 2 - New Name</div>
+                    <div class="card-description">Author Name</div>
+                </div>
+                <div class="card-content">
+                    <p>Short description of the book. This is where the book summary will go. <br>Shelf: 12, Row: 5</p>
+                </div>
+
+            </div>
+            <div class="card" data-subject="physics">
+                <div class="card-header">
+                    <div class="card-title">Book Title 2 - New Name</div>
+                    <div class="card-description">Author Name</div>
+                </div>
+                <div class="card-content">
+                    <p>Short description of the book. This is where the book summary will go. <br>Shelf: 12, Row: 5</p>
+                </div>
+            </div>
+            <div class="card" data-subject="chemistry">
+                <div class="card-header">
+                    <div class="card-title">Book Title 3 - New Name</div>
+                    <div class="card-description">Author Name</div>
+                </div>
+                <div class="card-content">
+                    <p>Short description of the book. This is where the book summary will go. <br>Shelf: 12, Row: 5</p>
+                </div>
+            </div>
+            <div class="card" data-subject="c-programming">
+                <div class="card-header">
+                    <div class="card-title">The Catcher in the Rye</div>
+                    <div class="card-description">Author Name</div>
+                </div>
+                <div class="card-content">
+                    <p>Short description of the book. This is where the book summary will go. <br>Shelf: 12, Row: 5</p>
+                </div>
+            </div>
+            <!-- Additional cards can be added here -->
+        </main>
+    </div>
+    <script>
+        // JavaScript for search and filter functionality
+        document.querySelector('input[type="search"]').addEventListener('input', filterCards);
+        document.querySelector('#filter').addEventListener('change', filterCards);
+
+        function filterCards() {
+            const searchQuery = document.querySelector('input[type="search"]').value.toLowerCase();
+            const selectedSubject = document.querySelector('#filter').value;
+            const cards = document.querySelectorAll('.card');
+            
+            cards.forEach(card => {
+                const title = card.querySelector('.card-title').textContent.toLowerCase();
+                const description = card.querySelector('.card-description').textContent.toLowerCase();
+                const subject = card.getAttribute('data-subject');
+
+                const matchesSearch = title.includes(searchQuery) || description.includes(searchQuery);
+                const matchesSubject = selectedSubject === "" || selectedSubject === subject;
+
+                if (matchesSearch && matchesSubject) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
